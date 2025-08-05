@@ -1,0 +1,235 @@
+.main-menu {
+  background-color: #ffffff;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main-menu .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 937px;
+  position: relative;
+}
+
+.main-menu .element {
+  position: absolute;
+  width: 465px;
+  height: 625px;
+  top: 178px;
+  left: 80px;
+  border-radius: 8px;
+  background-image: url(./img/1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-menu .text-wrapper {
+  width: 624px;
+  top: 324px;
+  left: 586px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  position: absolute;
+  color: #000000;
+  line-height: normal;
+}
+
+.main-menu .text-wrapper-2 {
+  position: absolute;
+  width: 724px;
+  top: 471px;
+  left: 586px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.main-menu .text-wrapper-3 {
+  position: absolute;
+  width: 429px;
+  top: 829px;
+  left: 98px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: -0.80px;
+  line-height: normal;
+}
+
+.main-menu .text-wrapper-4 {
+  width: 724px;
+  top: 534px;
+  left: 586px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.64px;
+  position: absolute;
+  color: #000000;
+  line-height: normal;
+}
+
+.main-menu .p {
+  width: 695px;
+  top: 632px;
+  left: 606px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: -0.64px;
+  position: absolute;
+  color: #000000;
+  line-height: normal;
+}
+
+.main-menu .text-wrapper-5 {
+  width: 724px;
+  top: 390px;
+  left: 586px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.64px;
+  position: absolute;
+  color: #000000;
+  line-height: normal;
+}
+
+.main-menu .text-wrapper-6 {
+  position: absolute;
+  width: 461px;
+  top: 185px;
+  left: 586px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: -1.92px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.main-menu .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 164px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.main-menu .hamburger-menu {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+}
+
+.main-menu .rectangle {
+  top: 20px;
+  position: absolute;
+  width: 68px;
+  height: 7px;
+  left: 16px;
+  background-color: #000000;
+}
+
+.main-menu .rectangle-2 {
+  top: 45px;
+  position: absolute;
+  width: 68px;
+  height: 7px;
+  left: 16px;
+  background-color: #000000;
+}
+
+.main-menu .rectangle-3 {
+  top: 70px;
+  position: absolute;
+  width: 68px;
+  height: 7px;
+  left: 16px;
+  background-color: #000000;
+}
+/* Original CSS will be injected here */
+
+/* Semantic improvements and accessibility enhancements */
+.main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 937px;
+  padding: 0 20px;
+}
+
+.profile-image {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.hamburger-menu:focus {
+  outline: 2px solid #4a90e2;
+}
+
+.hamburger-menu .rectangle,
+.hamburger-menu .rectangle-2,
+.hamburger-menu .rectangle-3 {
+  display: block;
+}
+
+/* Media queries for basic responsiveness */
+@media (max-width: 1440px) {
+  .profile-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-menu .text-wrapper,
+  .main-menu .text-wrapper-2,
+  .main-menu .text-wrapper-6 {
+    font-size: calc(100% + 1vw);
+    width: 100%;
+  }
+
+  .main-menu .p {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .main-menu .element {
+    width: 100%;
+    max-width: 465px;
+    height: auto;
+    aspect-ratio: 465 / 625;
+  }
+}
